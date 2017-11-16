@@ -48,7 +48,7 @@ def evaluate_section(s):
     return evaluate_floating_point_number(s)
 
 def evaluate(s):
-    sections = s.split("+")
+    sections = s.split(",")
     sum = 0
     for section in sections:
         sum = sum + evaluate_section(section) 
