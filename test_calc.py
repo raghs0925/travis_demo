@@ -35,5 +35,9 @@ class Test_000_Calculator(unittest.TestCase):
         self.assertEqual(calc.evaluate('0xff'),255)
         self.assertEqual(calc.evaluate('0xFF'),255)
 
+    def test_add_two_numbers(self):
+        self.assertEqual(calc.evaluate('1+1'),2)
+    
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
