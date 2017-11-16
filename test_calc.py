@@ -27,6 +27,7 @@ class Test_000_Calculator(unittest.TestCase):
     def test_floating_numbers(self):
         self.assertEqual(calc.evaluate('123.456'),123.456)
         self.assertEqual(calc.evaluate('-123.456'),-123.456)
+        self.assertEqual(calc.evaluate('0123.456'),123.456)
 
     def test_hexadecimal_numbers(self):
         self.assertEqual(calc.evaluate('0x00'),0)
