@@ -5,4 +5,5 @@ python:
 install:
 script:
   - python3 test_calc.py
+  - pytest
 
