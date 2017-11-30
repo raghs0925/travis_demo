@@ -23,6 +23,7 @@ class Test_000_Calculator(unittest.TestCase):
         self.assertEqual(calc.evaluate('-1'),-1)
         self.assertEqual(calc.evaluate('0'),0)
         self.assertEqual(calc.evaluate('---123'),-123)
+        self.assertEqual(calc.evaluate('-----123'),-123)
 
     def test_floating_numbers(self):
         self.assertEqual(calc.evaluate('123.456'),123.456)
