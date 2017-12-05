@@ -25,4 +25,7 @@ def step_impl(context):
 @then('we will find 0 results')
 def step_impl(context):
     noResultsTitle = context.driver.find_element_by_id("noResultsTitle")
-    assert "0 results" in noResultsTitle.text 
+    print(noResultsTitle.text)
+    zero_results = "0 results" in noResultsTitle.text 
+    no_match = "did not match any" in noResultsTitle.text 
+    assert zero_results or no_match
