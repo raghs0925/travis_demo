@@ -5,7 +5,8 @@ from selenium.webdriver.common.keys import Keys
 
 @given('we have navigated to "amazon.com"')
 def step_impl(context):
-    context.driver = webdriver.Chrome(executable_path="chromedriver")
+    #context.driver = webdriver.Chrome(executable_path="chromedriver")
+    context.driver = webdriver.PhantomJS()
     context.driver.get("http://amazon.com")
     assert "Amazon" in context.driver.title
 
